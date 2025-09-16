@@ -1,15 +1,19 @@
-import "./GameBoard.module.css"
+import styles from "./GameBoard.module.css";
 
 export const GameBoard = () => {
   
-  const size = 16;
+  const size = 17;
 
   const dots = [
-  [4, 4],
-  [4, 10],
-  [4, 16],
-  [10, 4],
-
+    [4, 4],
+    [4, 9],
+    [4, 14],
+    [9, 4],
+    [9, 9],
+    [9, 14],
+    [14, 4],
+    [14, 9],
+    [14, 14],
   ];
 
   const isDot = (i, j) => dots.some(([x, y]) => x === i && y === j);
@@ -21,7 +25,7 @@ export const GameBoard = () => {
         {Array.from({length: size - 1}, (_, i) => (
         <tr key={i}>
         {Array.from ({length: size - 1}, (_, j) => (
-        <td key={j} className={isDot(i + 1, j + 1) ? "dot" : ""}></td>
+        <td key={j} className={isDot(i + 1, j + 1) ? styles.dot : ""}></td>
         ))}
         </tr>
         ))}
