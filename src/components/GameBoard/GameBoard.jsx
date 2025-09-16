@@ -35,3 +35,5 @@ export const GameBoard = () => {
   </div>
   )
 }
+
+export default GameBoard;
