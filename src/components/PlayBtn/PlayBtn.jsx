@@ -7,9 +7,7 @@ function PlayBtn() {
 	};
 
 	return(
-		<div className={styles.modalbox}>
-			<button className={styles.button} onClick={handleStart}> Play </button>
-		</div>
+		<button className={styles.button} onClick={handleStart}> Play </button>
 	);
 }
 export default PlayBtn;
