@@ -19,6 +19,24 @@ If you already have the repo locally:
 3. Use git pull, this will pull down all of the recent changes that are made, if there are any to you locally.
 4. Use git status to make sure that you have pull everything correctly
 
-## Usage
+## Project structure and usage guide
 
-This simple guide will help you understand how to use this repo.
+To make a component, make sure you're standing in the components directory, wich you will find in src:
+
+├── src
+│   ├── stories
+│   ├── components
+│      └── Button
+│      └── GameBoard
+│      └── Piece
+│      └── PlayBtn
+│      └── RestartBtn
+│      └── StartPopup
+
+In the components directory, run mkdir "name of component".
+After you've named the new components directory, hit "cd (name of component)"
+You can run "pwd" in your terminal to see where you are standing. If the last directory name is the one you recently named, you're standing correct!
+
+### Creating your first component
+
+This is how you'll start your first component.
