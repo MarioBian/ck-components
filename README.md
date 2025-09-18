@@ -1,5 +1,4 @@
 # Commit Kings - Components repository
 
----------------------------------------------------------------------------------------------------------------------------------------
 
-This is the Conponents repository for a Gomoku game
+This is the Components repository for a Gomoku game
