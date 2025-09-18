@@ -8,7 +8,6 @@ export default {
 
 export const Default = {
   args: {
-    title: 'Börja om',
     onClick: () => console.log('Storybook: klick!'),
   },
 };
