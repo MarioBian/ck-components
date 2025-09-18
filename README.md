@@ -22,16 +22,7 @@ If you already have the repo locally:
 ## Project structure and usage guide
 
 To make a component, make sure you're standing in the components directory, wich you will find in src:
-
-├── src
-│   ├── stories
-│   ├── components
-│      └── Button
-│      └── GameBoard
-│      └── Piece
-│      └── PlayBtn
-│      └── RestartBtn
-│      └── StartPopup
+![Tree Structure](./assets/tree-structure.png)
 
 In the components directory, run mkdir "name of component".
 After you've named the new components directory, hit "cd (name of component)"
