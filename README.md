@@ -17,4 +17,8 @@ If you already have the repo locally:
 1. Go to your git bash
 2. Make sure you are in the tight project ck-Components and that you're standing in main
 3. Use git pull, this will pull down all of the recent changes that are made, if there are any to you locally.
-4. Use git status to make sure that you have pull everything correctly.
+4. Use git status to make sure that you have pull everything correctly
+
+## Usage
+
+This simple guide will help you understand how to use this repo.
