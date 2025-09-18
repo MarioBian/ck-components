@@ -1,12 +1,33 @@
-# React + Vite
+# Commit Kings - Components repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+This is the Components repository for a Gomoku game
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+If you don't have this repository lacally alredy, here is the steps you can follow to clone it.If you don’t already have this repository locally, here are the steps you can follow to clone it.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Go to your git bash
+2. Make sure you're in the correct directory of where you want to clone the repo (repository)
+3. git clone (URL)
+4. go to main by doing this steps: cd ck-Components
+
+If you already have the repo locally:
+
+1. Go to your git bash
+2. Make sure you are in the tight project ck-Components and that you're standing in main
+3. Use git pull, this will pull down all of the recent changes that are made, if there are any to you locally.
+4. Use git status to make sure that you have pull everything correctly
+
+## Project structure and usage guide
+
+To make a component, make sure you're standing in the components directory, wich you will find in src:
+![Tree Structure](./assets/tree-structure.png)
+
+In the components directory, run mkdir "name of component".
+After you've named the new components directory, hit "cd (name of component)"
+You can run "pwd" in your terminal to see where you are standing. If the last directory name is the one you recently named, you're standing correct!
+
+### Creating your first component
+
+This is how you'll start your first component.

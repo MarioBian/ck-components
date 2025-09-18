@@ -11,10 +11,9 @@ const Button = ({ title = 'klicka på mig', onClick }) => {
     <button
       type="button"
       className={styles.button}
-      title={title}
-      onClick={handleClick}
-    >
-      {title}
+	onClick={handleClick}
+   	>
+	{title}
     </button>
   );
 };
