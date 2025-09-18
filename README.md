@@ -3,4 +3,4 @@
 
 This is the Components repository for a Gomoku game
 
-# Installation
+## Installation
