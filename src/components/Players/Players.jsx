@@ -107,6 +107,13 @@ export default function PlayerColorSelector() {
 			{step === 3 && (
 				<div>
 					<h2> All set! Here are your players </h2>
+					<div>
+						<div style={{ display: 'flex', justifyContent: 'center', gap: '50px', margin: '30px 0'}}>
+							<h3> Player 1 </h3>
+							<Piece color={player1Color} />
+							<p>Color: {player1Color}</p>
+						</div>
+					</div>
 				</div>
 			)}
 		</div>
