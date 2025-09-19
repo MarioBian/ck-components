@@ -1,4 +1,3 @@
-import {REACT} from 'react';
 import {Players} from '.';
 
 export default{
