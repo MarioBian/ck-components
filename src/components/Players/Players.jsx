@@ -1,42 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
-
-const pieceStyles = {
-	red: {
-		width: '40px',
-		height: '40px',
-		borderRadius: '50%',
-		backgroundColor: 'red',
-		margin: '10px'
-	},
-	blue: {
-		width: '40px',
-		height: '40px',
-		borderRadius: '50%',
-		backgroundColor: 'blue',
-		margin: '10px'
-
-	}
-};
-
-const buttonStyle = {
-	padding: '15px 30px',
-	margin: '10px',
-	fontSize: '16px',
-	borderRadius: '8px',
-	border: 'none',
-	cursor: 'pointer',
-	backgroundColor: '#007bff',
-	color: 'white'
-
-};
+import styles from "./Players.module.css"
 
 
 function Piece({ color }) {
 	if (color === 'red') {
-		return <div style={pieceStyles.red}></div>
+		return <div style={styles.redPiece}></div>
 	} else {
-		return <div style={pieceStyles.blue}></div>
+		return <div style={styles.bluePiece}></div>
 
 	}
 }
@@ -79,13 +50,13 @@ export default function PlayerColorSelector() {
 	}
 
 	return(
-		<div>
-			<h1> Choose your player and color </h1>
+		<div className={styles.card}>
+			<h1 className={styles.title}> Choose your player and color </h1>
 			{step === 1 && (
 				<div>
 					<h2> Step 1: Wich player are you? </h2>
-					<button style={buttonStyle} onClick={() => choosePlayer('player1')}> I am Player 1 </button>
-					<button style={buttonStyle} onClick={() => choosePlayer('player2')}> I am Player 2 </button>
+					<button onClick={() => choosePlayer('player1')}> I am Player 1 </button>
+					<button onClick={() => choosePlayer('player2')}> I am Player 2 </button>
 				</div>
 
 			)}
@@ -93,10 +64,10 @@ export default function PlayerColorSelector() {
 				<div>
 					<h2>Step 2: {selectedPlayer === 'player1' ? 'Player 1' : 'Player 2'}, choose your color </h2>
 					<p>Click on the color you want:</p>
-					<button style={{ border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => chooseColor('red')} >
+					<button onClick={() => chooseColor('red')} >
 						<Piece color="red"/>
 					</button>
-					<button style={{ border: 'none', background: 'none', cursor: 'pointer'}} onClick={() => chooseColor('blue')} >
+					<button onClick={() => chooseColor('blue')} >
 						<Piece color='blue' />
 					</button>
 				</div>
