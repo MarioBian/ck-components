@@ -41,3 +41,44 @@ function Piece({ color }) {
 	}
 }
 
+export default function PlayerColorSelector() {
+	const [step, setStep] = useState(1);
+	const [selectedPlayer, setSelectedPlayer] = useState('');
+	const [player1Color, setPlayer1Color] = useState('');
+	const [player2Color, setPlayer2Color] = useState('');
+
+	function choosePlayer(playerNumber) {
+		setSelectedPlayer(playerNumber);
+		setStep(2);
+
+	}
+	function chooseColor(color) {
+		if (selectedPlayer === 'player1') {
+		setPlayer1Color(color);
+			if (color === 'red') {
+				setPlayer2Color('blue');
+			} else {
+				setPlayer2Color('red');
+			}
+		}
+
+		if (selectedPlayer === 'player2') {
+			setPlayer2Color(color);
+			if (color === 'red') {
+				setPlayer1Color('blue');
+			} else {
+				setPlayer1Color('red');
+			}
+		}
+		setStep(3);
+	}
+
+	function StartGame() {
+		const handleClick = () => {
+		console.log("Game starts");
+		}
+
+	}
+
+	return()
+}
