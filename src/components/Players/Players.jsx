@@ -113,6 +113,12 @@ export default function PlayerColorSelector() {
 							<Piece color={player1Color} />
 							<p>Color: {player1Color}</p>
 						</div>
+						<div>
+							<h3> Player 2 </h3>
+							<Piece color={player2Color} />
+							<p>Color: {player2Color}</p>
+						</div>
+						<button onClick={handleClick}> Start Game!</button>
 					</div>
 				</div>
 			)}
