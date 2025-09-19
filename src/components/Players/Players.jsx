@@ -5,7 +5,7 @@ const pieceStyles = {
 	red: {
 		width: '40px',
 		height: '40px',
-		borderRadius: '50%';
+		borderRadius: '50%',
 		backgroundColor: 'red',
 		margin: '10px'
 	},
