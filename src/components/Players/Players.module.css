@@ -82,3 +82,65 @@
 .colorButton:hover {
 	transform: scale(1.1);
 }
+/* Step 3 - players display */
+.playersSection {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin: 30px 0;
+	flex-wrap: wrap;
+}
+
+.playerDisplay {
+	text-align: center;
+}
+
+.playerTitle {
+	color: #1f2937;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.colorText {
+	color: #6b7280;
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+/* Start game button */
+
+.startButton {
+	display: block;
+	margin: 20px auto 0;
+	padding: 15px 30px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	background-color: #28a745;
+	color: white;
+	transition: all 0.2s;
+}
+
+.startButton:hover {
+	background-color: #218838;
+	transform: scale(1.05);
+}
+
+/* Piece styles */
+.redPiece {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: red;
+	margin: 10px auto;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.bluePiece {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: blue;
+	margin: 10px auto;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
