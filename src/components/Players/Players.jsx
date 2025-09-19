@@ -5,9 +5,9 @@ import styles from "./Players.module.css"
 
 function Piece({ color }) {
 	if (color === 'red') {
-		return <div style={styles.redPiece}></div>
+		return <div className={styles.redPiece}></div>
 	} else {
-		return <div style={styles.bluePiece}></div>
+		return <div className={styles.bluePiece}></div>
 
 	}
 }
@@ -54,40 +54,44 @@ export default function PlayerColorSelector() {
 			<h1 className={styles.title}> Choose your player and color </h1>
 			{step === 1 && (
 				<div>
-					<h2> Step 1: Wich player are you? </h2>
-					<button onClick={() => choosePlayer('player1')}> I am Player 1 </button>
-					<button onClick={() => choosePlayer('player2')}> I am Player 2 </button>
+					<h2 className={styles.subtitle}> Step 1: Wich player are you? </h2>
+					<div className={styles.buttonContainer}>
+						<button className={styles.playerButton} onClick={() => choosePlayer('player1')}> I am Player 1 </button>
+						<button className={styles.playerButton} onClick={() => choosePlayer('player2')}> I am Player 2 </button>
+					</div>
 				</div>
 
 			)}
 			{step === 2 && (
 				<div>
-					<h2>Step 2: {selectedPlayer === 'player1' ? 'Player 1' : 'Player 2'}, choose your color </h2>
-					<p>Click on the color you want:</p>
-					<button onClick={() => chooseColor('red')} >
-						<Piece color="red"/>
-					</button>
-					<button onClick={() => chooseColor('blue')} >
-						<Piece color='blue' />
-					</button>
+					<h2 className={styles.subtitle}>Step 2: {selectedPlayer === 'player1' ? 'Player 1' : 'Player 2'}, choose your color </h2>
+					<p className={styles.instruction}>Click on the color you want:</p>
+					<div className={styles.colorContainer}>
+						<button className={styles.colorButton} onClick={() => chooseColor('red')} >
+							<Piece color="red"/>
+						</button>
+						<button className={styles.colorButton} onClick={() => chooseColor('blue')} >
+							<Piece color='blue' />
+						</button>
+					</div>
 				</div>
 
 			)}
 			{step === 3 && (
 				<div>
-					<h2> All set! Here are your players </h2>
-					<div>
-						<div style={{ display: 'flex', justifyContent: 'center', gap: '50px', margin: '30px 0'}}>
-							<h3> Player 1 </h3>
+					<h2 className={styles.subtitle}> All set! Here are your players </h2>
+					<div className={styles.playersSection}>
+						<div className={styles.playerDisplay}>
+							<h3 className={styles.playerTitle}> Player 1 </h3>
 							<Piece color={player1Color} />
-							<p>Color: {player1Color}</p>
+							<p className={styles.colorText}>Color: {player1Color}</p>
 						</div>
-						<div>
-							<h3> Player 2 </h3>
+						<div className={styles.playerDisplay}>
+							<h3 className={styles.playerTitle}> Player 2 </h3>
 							<Piece color={player2Color} />
-							<p>Color: {player2Color}</p>
+							<p className={styles.colorText}>Color: {player2Color}</p>
 						</div>
-						<button onClick={StartGame}> Start Game!</button>
+						<button className={styles.startButton} onClick={StartGame}> Start Game!</button>
 					</div>
 				</div>
 			)}
