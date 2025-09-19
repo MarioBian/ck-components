@@ -45,6 +45,24 @@ export default function PlayerColorSelector() {
 					</div>
 				</div>
 			)}
+			{currentPlayer && !gameReady && (
+				<div>
+					<h2> Player {currentPlayer}, Choose your color </h2>
+					<div>
+						<button>
+							<Piece color='red'/>
+						</button>
+						<button>
+							<Piece color='blue'/>
+						</button>
+					</div>
+				</div>
+			)}
+			{gameReady && (
+				<div>
+					<h2>Ready to game</h2>
+				</div>
+			)}
 
 		</div>
 	)
