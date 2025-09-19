@@ -74,9 +74,7 @@ export default function PlayerColorSelector() {
 	}
 
 	function StartGame() {
-		const handleClick = () => {
-		console.log("Game starts");
-		}
+		console.log("Game starts!")
 
 	}
 
@@ -118,7 +116,7 @@ export default function PlayerColorSelector() {
 							<Piece color={player2Color} />
 							<p>Color: {player2Color}</p>
 						</div>
-						<button onClick={handleClick}> Start Game!</button>
+						<button onClick={StartGame}> Start Game!</button>
 					</div>
 				</div>
 			)}
