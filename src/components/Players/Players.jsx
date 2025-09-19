@@ -80,5 +80,35 @@ export default function PlayerColorSelector() {
 
 	}
 
-	return()
+	return(
+		<div>
+			<h1> Choose your player and color </h1>
+			{step === 1 && (
+				<div>
+					<h2> Step 1: Wich player are you? </h2>
+					<button style={buttonStyle} onClick={() => choosePlayer('player1')}> I am Player 1 </button>
+					<button style={buttonStyle} onClick={() => choosePlayer('player2')}> I am Player 2 </button>
+				</div>
+
+			)}
+			{step === 2 && (
+				<div>
+					<h2>Step 2: {selectedPlayer === 'player1' ? 'Player 1' : 'Player 2'}, choose your color </h2>
+					<p>Click on the color you want:</p>
+					<button style={{ border: 'none', background: 'none', cursor: 'pointer' }} onClick={() => chooseColor('red')} >
+						<Piece color="red"/>
+					</button>
+					<button style={{ border: 'none', background: 'none', cursor: 'pointer'}} onClick={() => chooseColor('blue')} >
+						<Piece color='blue' />
+					</button>
+				</div>
+
+			)}
+			{step === 3 && (
+				<div>
+					<h2> All set! Here are your players </h2>
+				</div>
+			)}
+		</div>
+	)
 }
