@@ -3,6 +3,10 @@ import {StartPopUp} from '.';
 export default {
 	title: 'Components/StartPopUp',
 	component: StartPopUp,
-}
+	args: {
+		header: 'Välkommen!',
+		paragraph: 'Få fem i rad',
+	},
+};
 
-export const Default = {}
+export const Default = (args) => <StartPopUp {...args} />;
