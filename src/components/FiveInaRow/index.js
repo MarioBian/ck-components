@@ -1,1 +1,1 @@
-export {default as FiveInaRow} from './FiveInaRow';
+export { default as FiveInaRow } from "./FiveInaRow";
