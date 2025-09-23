@@ -30,15 +30,27 @@ const checkDirection = (rowStep, colStep) => {
 	if (gameBoard[row]?.[col] === activePlayer) count ++;
 	else brak;
 }
+   for (let i = 1; i < 5; i++) {
+        const row = lastMoveRow - rowStep * i;
+        const col = lastMoveColumn - colStep * i;
+        if (gameBoard[row]?.[col] === activePlayer) count++;
+        else break;
+      }
 
+      return count >= 5;
+    };
 
-	
-	return (
-		<>Five in a row component</>
+    for (let [rowStep, colStep] of directions) {
+      if (checkDirection(rowStep, colStep)) {
+        alert(`${activePlayer} vann!`);
+        onPlayerWin(activePlayer);
+        break;
+      }
+    }
 
-		);
-	
-}
+  }, [gameBoard, lastMoveRow, lastMoveColumn, activePlayer, onPlayerWin]);
+
+  return null;
 
 
 export default FiveInaRow;
