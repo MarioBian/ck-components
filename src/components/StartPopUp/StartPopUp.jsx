@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import styles from './StartPopUp.module.css';
+import Button from '../Button/Button';
 
-const StartPopUp = () => {
+const StartPopUp = ({ header='Välkommen!', paragraph='Få fem i rad' }) => {
 	const [isOpen, setIsOpen] = useState(true);
 	const handleStart = () => {
 		setIsOpen(false); 
@@ -12,9 +13,9 @@ const StartPopUp = () => {
 	return (
 		<div className={styles.overlay}>
 			<div className={styles.modal}>
-				<h1>Välkommen!</h1>
-				<p>Här kommer text om spelet, instruktioner osv.</p>
-				Placeholder för knapp "Starta spel"
+				<h1>{header}</h1>
+				<p>{paragraph}</p>
+				<Button title='Starta spel' onClick={handleStart} />
 			</div>
 		</div>
 	);
