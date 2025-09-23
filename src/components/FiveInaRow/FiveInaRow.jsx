@@ -50,7 +50,12 @@ const checkDirection = (rowStep, colStep) => {
 
   }, [gameBoard, lastMoveRow, lastMoveColumn, activePlayer, onPlayerWin]);
 
-  return null;
+  return(
+ <div style={{ display: 'none' }}>
+FiveInaRow logic
+</div>
+);
+
 
 
 export default FiveInaRow;
