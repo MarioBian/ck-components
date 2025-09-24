@@ -9,7 +9,7 @@ const Button = ({ title = 'klicka på mig', onClick }) => {
 
   return (
     <button
-      type="button"
+      type="button" // extra info på knappen
       className={styles.button}
 	onClick={handleClick}
    	>
