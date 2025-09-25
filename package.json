@@ -1,8 +1,15 @@
 {
-  "name": "ck-components",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@ck/ck-components",
+  "version": "0.0.1",
   "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,9 +18,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
@@ -39,3 +46,4 @@
     "vitest": "^3.2.4"
   }
 }
+
