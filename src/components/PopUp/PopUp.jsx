@@ -13,8 +13,8 @@ const PopUp = ({ header = "Välkommen!", paragraph = "Få fem i rad" }) => {
   return (
     <div className={styles.overlay}>
       <div className={styles.modal}>
-        <h1>{header}</h1>
-        <p>{paragraph}</p>
+        <h1 className={styles.title}>{header}</h1>
+        <p className={styles.text}>{paragraph}</p>
         <Button title="Starta spel" onClick={handleStart} />
       </div>
     </div>
