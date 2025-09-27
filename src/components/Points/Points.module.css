@@ -1,0 +1,118 @@
+:root {
+  --bg: #F5F3EF;         /* ljus bakgrund */
+  --surface: #FFFFFF;     /* kortyta */
+  --ink: #000000;         /* text/svart bricka */
+  --board: #956F47;       /* bräd-brun */
+  --green: #0A8759;       /* primärgrön */
+  --green-600: #0B5D3F;   /* hover/mörkgrön */
+  --green-300: #65AC31;   /* sekundärgrön */
+  --accent: #AB422E;      /* accent (röd/brunröd) */
+}
+
+/* Wrapper */
+.pointsRoot {
+  background: var(--bg);
+  padding: 1rem;
+}
+
+/* Själva kortet */
+.pointsCard {
+  background: var(--surface);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 16px 18px;
+  width: 100%;
+  max-width: 420px;
+  display: grid;
+  gap: 12px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+}
+
+/* Header */
+.pointsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(149,111,71,0.25); /* brädton divider */
+}
+
+.pointsTitle {
+  font-size: 14px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--green-600);
+}
+
+.resetBtn {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: var(--surface);
+  cursor: pointer;
+}
+.resetBtn:hover {
+  border-color: rgba(0,0,0,0.18);
+}
+
+/* Spelarrad */
+.playerRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  border-radius: 12px;
+}
+.playerRow:is(:hover, :focus-within) {
+  background: rgba(10,135,89,0.06); /* diskret grönt hoverfält */
+}
+
+/* Brickor */
+.piece {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.12),
+              inset 0 1px 0 rgba(255,255,255,0.5);
+  border: 1.5px solid rgba(0,0,0,0.2);
+}
+.black { background: #000; }
+.white { background: #fff; border-color: rgba(0,0,0,0.15); }
+
+/* Textinfo */
+.playerMeta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.playerName {
+  font-weight: 700;
+}
+.playerHint {
+  font-size: 12px;
+  opacity: .7;
+}
+
+/* Poäng-capsule */
+.score {
+  min-width: 56px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 800;
+  background: var(--green);
+  color: white;
+}
+
+/* Responsiv */
+@media (max-width: 420px) {
+  .pointsCard { padding: 14px; }
+  .score { min-width: 48px; }
+}
+
