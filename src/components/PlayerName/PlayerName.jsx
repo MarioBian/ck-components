@@ -6,7 +6,7 @@ const PlayerName = () => {
 	const [player2, setPlayer2] = useState('');
 
 	return (
-		<div>
+		<div className="playerDiv">
 		<input placeholder="Spelare 1" value={player1} onChange={e => setPlayer1(e.target.value)}/>
 		<input placeholder="Spelare 2" value={player2} onChange={e => setPlayer2(e.target.value)}/>
 <div>{player1}</div>

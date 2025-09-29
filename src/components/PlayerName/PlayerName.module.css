@@ -15,10 +15,10 @@ input:focus {
   box-shadow: 5.5px 7px 0 #000;
 }
 
-div {
+.playerDiv {
   margin-top: 12px;
   display: flex;
-  gap: 4px;
+  gap: 12px;
   padding: 8px;
   line-height:1em;
   color:#eeff00;
