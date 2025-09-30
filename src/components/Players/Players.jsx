@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from "./Players.module.css";
-import Piece from "./Piece/Piece.jsx";
+import Piece from "../Piece/Piece";
 
 
 export default function PlayerColorSelector() {
