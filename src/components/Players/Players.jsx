@@ -1,16 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from "./Players.module.css"
+import styles from "./Players.module.css";
+import Piece from "../Piece/Piece";
 
-
-function Piece({ color }) {
-	if (color === 'red') {
-		return <div className={styles.redPiece}></div>
-	} else {
-		return <div className={styles.bluePiece}></div>
-
-	}
-}
 
 export default function PlayerColorSelector() {
 	const [step, setStep] = useState(1);

@@ -1,4 +1,5 @@
 import styles from "./GameBoard.module.css";
+import boardData from "./data/emptyBoard.json"
 
 export const GameBoard = () => {
   
