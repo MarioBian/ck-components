@@ -4,11 +4,6 @@
   border-radius: 50%;
   background-color: blue;
 
-  /* Centrera texten i mitten */
-  display: flex;
-  align-items: center;     /* lodrätt */
-  justify-content: center; /* vågrätt */
-
   color: white;            /* textfärg */
   font-weight: bold;
 }
@@ -19,11 +14,7 @@
   border-radius: 50%;
   background-color: rgb(255, 0, 0);
 
-  /* Centrera texten i mitten */
-  display: flex;
-  align-items: center;     /* lodrätt */
-  justify-content: center; /* vågrätt */
-
   color: white;            /* textfärg */
   font-weight: bold;
+;
 }

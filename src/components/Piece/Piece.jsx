@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './Piece.module.css';
 
-const Piece = () => 
+const Piece = () => {
+return (
+ <div className={styles.piecesContainer}>
 <div 
   className={styles.bluePiece}
   draggable
@@ -17,6 +19,9 @@ const Piece = () =>
   >
     Röd
 </div>;
+</div>
+)
+}
 
 export default Piece;
 
