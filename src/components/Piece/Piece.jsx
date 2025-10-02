@@ -11,7 +11,6 @@ const Piece = () => {
       >
         blå
       </div>
-      ;
       <div
         className={styles.redPiece}
         draggable
@@ -19,7 +18,6 @@ const Piece = () => {
       >
         Röd
       </div>
-      ;
     </div>
   );
 };
