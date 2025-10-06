@@ -3,3 +3,4 @@ export { Gameboard } from "./components/Gameboard";
 export { Background } from "./components/Background";
 export { Players } from "./components/Players";
 export { Piece } from "./components/Piece";
+export { PopUp } from "./components/PopUp";
