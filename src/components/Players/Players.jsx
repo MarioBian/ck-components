@@ -35,23 +35,23 @@ export default function PlayerColorSelector({ onGameStart }) {
 
   return (
     <div className={styles.card}>
-      <h1 className={styles.title}>Choose your player and color</h1>
+      <h1 className={styles.title}>Välj spelare och färg</h1>
 
       {step === 1 && (
         <div>
-          <h2 className={styles.subtitle}>Step 1: Which player are you?</h2>
+          <h2 className={styles.subtitle}>Steg 1: Vilken spelare är du?</h2>
           <div className={styles.buttonContainer}>
             <button
               className={styles.playerButton}
               onClick={() => choosePlayer("player1")}
             >
-              I am Player 1
+              Jag är spelare 1
             </button>
             <button
               className={styles.playerButton}
               onClick={() => choosePlayer("player2")}
             >
-              I am Player 2
+              Jag är spelare 2
             </button>
           </div>
         </div>
@@ -61,9 +61,9 @@ export default function PlayerColorSelector({ onGameStart }) {
         <div>
           <h2 className={styles.subtitle}>
             Step 2: {selectedPlayer === "player1" ? "Player 1" : "Player 2"},
-            choose your color
+            Välj färg på pjäs
           </h2>
-          <p className={styles.instruction}>Click on the color you want:</p>
+          <p className={styles.instruction}>Klicka på färgen du vill ha:</p>
 
           <div className={styles.colorContainer}>
             <button
@@ -83,7 +83,7 @@ export default function PlayerColorSelector({ onGameStart }) {
 
             <button
               className={styles.colorButton}
-              onClick={() => chooseColor("White")}
+              onClick={() => chooseColor("white")}
               // style={{
               //   border:
               //     selectedColor === "White"
@@ -101,28 +101,28 @@ export default function PlayerColorSelector({ onGameStart }) {
 
       {step === 3 && (
         <div>
-          <h2 className={styles.subtitle}>All set! Here are your players:</h2>
+          <h2 className={styles.subtitle}>Klart! Här är dina spelare</h2>
           <div className={styles.playersSection}>
             <div className={styles.playerDisplay}>
-              <h3 className={styles.playerTitle}>Player 1</h3>
+              <h3 className={styles.playerTitle}>Spelare 1</h3>
               {player1Color === "Black" ? (
                 <BlackPiece color={player1Color} />
               ) : (
                 <WhitePiece color={player1Color} />
               )}
-              <p className={styles.colorText}>Color: {player1Color}</p>
+              <p className={styles.colorText}>Färg: {player1Color}</p>
             </div>
             <div className={styles.playerDisplay}>
-              <h3 className={styles.playerTitle}>Player 2</h3>
+              <h3 className={styles.playerTitle}>Spelare 2</h3>
               {player2Color === "Black" ? (
                 <BlackPiece color={player2Color} />
               ) : (
                 <WhitePiece color={player2Color} />
               )}
-              <p className={styles.colorText}>Color: {player2Color}</p>
+              <p className={styles.colorText}>Färg: {player2Color}</p>
             </div>
             <button className={styles.startButton} onClick={StartGame}>
-              Start Game!
+              Starta spelet!
             </button>
           </div>
         </div>
