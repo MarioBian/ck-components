@@ -29,6 +29,6 @@ jobs:
         uses: sebastianpopp/discord-action@releases/v2
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: $ {{ github.actor }} has successfully pushed to main.
+          message: ${{ github.actor }} has successfully pushed to main.
         
 
