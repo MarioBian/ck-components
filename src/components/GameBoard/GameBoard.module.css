@@ -1,8 +1,8 @@
 td {
   width: 30px;
   height: 30px;
-  background-color: #ebce98;
-  border: 1.8px solid black;
+  background-color: #956f47;
+  border: 1.8px solid #654c31;
   display: table-cell;
   position: relative;
   transition: box-shadow 0.2s ease-in-out;
@@ -16,18 +16,5 @@ td:hover {
 
 table {
   border-collapse: collapse;
-  border: 4px solid #C28840;
+  border: 4px solid #654c31;
 }
-
-.dot::after {
-    content: "";
-    width: 25%;
-    height: 25%;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    top: -2%;
-    left: -2%;
-    transform: translate(-50%, -50%);
-  }
-
