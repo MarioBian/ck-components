@@ -43,14 +43,11 @@ const FiveInaRow = ({
 
     for (let [rowStep, colStep] of directions) {
       if (checkDirection(rowStep, colStep)) {
-        alert(`${activePlayer} vann!`);
         onPlayerWin(activePlayer);
         break;
       }
     }
   }, [gameBoard, lastMoveRow, lastMoveColumn, activePlayer, onPlayerWin]);
-
-  return <div>FiveInaRow logic</div>;
 };
 
 export default FiveInaRow;
