@@ -14,19 +14,19 @@ export const GameBoard = () => {
   const [gameOver, setGameOver] = useState(false);
   const [winner, setWinner] = useState(null);
 
-  const dots = [
-    [4, 4],
-    [4, 9],
-    [4, 14],
-    [9, 4],
-    [9, 9],
-    [9, 14],
-    [14, 4],
-    [14, 9],
-    [14, 14],
-  ];
+  // const dots = [
+  //   [4, 4],
+  //   [4, 9],
+  //   [4, 14],
+  //   [9, 4],
+  //   [9, 9],
+  //   [9, 14],
+  //   [14, 4],
+  //   [14, 9],
+  //   [14, 14],
+  // ];
 
-  const isDot = (i, j) => dots.some(([x, y]) => x === i && y === j);
+  // const isDot = (i, j) => dots.some(([x, y]) => x === i && y === j);
 
   const handleCellClick = (row, col) => {
     if (gameOver) {
@@ -98,9 +98,7 @@ export const GameBoard = () => {
               {Array.from({ length: size - 1 }, (_, j) => (
                 <td
                   key={j}
-                  className={`${styles.td} ${
-                    isDot(i + 1, j + 1) ? styles.dot : ""
-                  } ${gameOver ? styles.disabled : ""}`}
+                  className={`${styles.td} ${gameOver ? styles.disabled : ""}`}
                   onClick={() => handleCellClick(i, j)}
                 >
                   {board[i][j] === 1 && (
