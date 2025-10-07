@@ -15,18 +15,18 @@
   background: white;
   padding: 2rem;
   border-radius: 8px;
-  max-width: 400px;
+  max-width: 600px;
   width: 90%;
   text-align: center;
 }
 
 .title {
-	font-family: "Marcellus", serif;
+  font-family: "Marcellus", serif;
   font-weight: 400;
 }
 
 .text {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
-
