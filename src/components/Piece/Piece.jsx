@@ -5,37 +5,35 @@ const Piece = () => {
   return (
     <div className={styles.piecesContainer}>
       <div
-        className={styles.bluePiece}
+        className={styles.blackPiece}
         draggable
-        onDragStart={(e) => e.dataTransfer.setData("piece", "blue")}
+        onDragStart={(e) => e.dataTransfer.setData("piece", "black")}
       ></div>
       <div
-        className={styles.redPiece}
+        className={styles.whitePiece}
         draggable
-        onDragStart={(e) => e.dataTransfer.setData("piece", "red")}
+        onDragStart={(e) => e.dataTransfer.setData("piece", "white")}
       ></div>
     </div>
   );
 };
 // const Piece = ({ color }) => {
-//   if (color === "red") {
+//   if (color === "white") {
 //     return (
 //       <div
-//         className={styles.redPiece}
+//         className={styles.whitePiece}
 //         draggable
-//         onDragStart={(e) => e.dataTransfer.setData("piece", "red")}
+//         onDragStart={(e) => e.dataTransfer.setData("piece", "white")}
 //       >
-//         Röd
 //       </div>
 //     );
-//   } else if (color === "blue") {
+//   } else if (color === "black") {
 //     return (
 //       <div
-//         className={styles.bluePiece}
+//         className={styles.blackPiece}
 //         draggable
-//         onDragStart={(e) => e.dataTransfer.setData("piece", "blue")}
+//         onDragStart={(e) => e.dataTransfer.setData("piece", "black")}
 //       >
-//         Blå
 //       </div>
 //     );
 //   }
