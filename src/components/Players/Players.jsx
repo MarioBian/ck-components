@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./Players.module.css";
-import Piece from "../Piece/Piece";
+import BlackPiece from "../BlackPiece/BlackPiece";
+import WhitePiece from "../WhitePiece/WhitePiece";
 
 export default function PlayerColorSelector({ onGameStart }) {
   const [step, setStep] = useState(1);
@@ -74,13 +75,13 @@ export default function PlayerColorSelector({ onGameStart }) {
               className={styles.colorButton}
               onClick={() => chooseColor("red")}
             >
-              <Piece color="red" />
+              <BlackPiece color="red" />
             </button>
             <button
               className={styles.colorButton}
               onClick={() => chooseColor("blue")}
             >
-              <Piece color="blue" />
+              <WhitePiece color="blue" />
             </button>
           </div>
         </div>
@@ -91,12 +92,12 @@ export default function PlayerColorSelector({ onGameStart }) {
           <div className={styles.playersSection}>
             <div className={styles.playerDisplay}>
               <h3 className={styles.playerTitle}> Player 1 </h3>
-              <Piece color={player1Color} />
+              <BlackPiece color={player1Color} />
               <p className={styles.colorText}>Color: {player1Color}</p>
             </div>
             <div className={styles.playerDisplay}>
               <h3 className={styles.playerTitle}> Player 2 </h3>
-              <Piece color={player2Color} />
+              <WhitePiece color={player2Color} />
               <p className={styles.colorText}>Color: {player2Color}</p>
             </div>
             <button className={styles.startButton} onClick={StartGame}>
