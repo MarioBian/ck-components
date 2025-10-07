@@ -1,22 +1,6 @@
 .woodenBg {
-  width: 100%;;
+  width: 100%;
   height: 100%;
-  border-radius: 12px;
   padding: 1rem;
-
-background-image:
-  repeating-linear-gradient(
-      -45deg,
-      rgba(0, 0, 0, 0.08) 0px,
-      rgba(0, 0, 0, 0.08) 1px,
-      transparent 2px,
-      transparent 6px
-    ),
-    linear-gradient(180deg, #6b4f2b, #c89b6a);
-  background-size: auto, 100%;
-  background-blend-mode: overlay, normal;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #f5f3ef;
 }
