@@ -14,20 +14,6 @@ export const GameBoard = () => {
   const [gameOver, setGameOver] = useState(false);
   const [winner, setWinner] = useState(null);
 
-  // const dots = [
-  //   [4, 4],
-  //   [4, 9],
-  //   [4, 14],
-  //   [9, 4],
-  //   [9, 9],
-  //   [9, 14],
-  //   [14, 4],
-  //   [14, 9],
-  //   [14, 14],
-  // ];
-
-  // const isDot = (i, j) => dots.some(([x, y]) => x === i && y === j);
-
   const handleCellClick = (row, col) => {
     if (gameOver) {
       console.log("Game is over!");
