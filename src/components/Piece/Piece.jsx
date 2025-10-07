@@ -8,16 +8,12 @@ const Piece = () => {
         className={styles.bluePiece}
         draggable
         onDragStart={(e) => e.dataTransfer.setData("piece", "blue")}
-      >
-        blå
-      </div>
+      ></div>
       <div
         className={styles.redPiece}
         draggable
         onDragStart={(e) => e.dataTransfer.setData("piece", "red")}
-      >
-        Röd
-      </div>
+      ></div>
     </div>
   );
 };
