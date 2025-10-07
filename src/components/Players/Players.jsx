@@ -105,12 +105,20 @@ export default function PlayerColorSelector({ onGameStart }) {
           <div className={styles.playersSection}>
             <div className={styles.playerDisplay}>
               <h3 className={styles.playerTitle}>Player 1</h3>
-              <BlackPiece color={player1Color} />
+              {player1Color === "Black" ? (
+                <BlackPiece color={player1Color} />
+              ) : (
+                <WhitePiece color={player1Color} />
+              )}
               <p className={styles.colorText}>Color: {player1Color}</p>
             </div>
             <div className={styles.playerDisplay}>
               <h3 className={styles.playerTitle}>Player 2</h3>
-              <WhitePiece color={player2Color} />
+              {player2Color === "Black" ? (
+                <BlackPiece color={player2Color} />
+              ) : (
+                <WhitePiece color={player2Color} />
+              )}
               <p className={styles.colorText}>Color: {player2Color}</p>
             </div>
             <button className={styles.startButton} onClick={StartGame}>
