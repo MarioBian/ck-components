@@ -69,6 +69,21 @@ const Sample = () => {
 export default Sample;
 ```
 
+```
+> ./src/components/Sample/Sample.stories.jsx <<
+
+import {REACT} from 'react';
+import {Sample} from '.';
+
+export default {
+    title: 'Components/Sample',
+    component: Sample,
+}
+
+export const Default = {}
+
+```
+
 ## Acknoledgments
 
 - Thanks to all contributors
