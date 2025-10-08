@@ -42,6 +42,12 @@ npm install
 
 1. Create a new folder in the components folder and give it a name, example "Sample".
 
+```
+> .src/components <
+
+mkdir Sample
+```
+
 2. Scaffold Project
    Add these 5 files to your newly created folder:
 
