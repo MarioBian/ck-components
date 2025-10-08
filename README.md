@@ -43,6 +43,7 @@ npm install
 1. Create a new folder in the components folder and give it a name, example "Sample".
 
 2. Scaffold Project
+   Add these 5 files to your newly created folder:
 
 ```
 touch ./src/components/Sample/index.js
@@ -53,9 +54,10 @@ touch ./src/components/Sample/Sample.stories.jsx
 ```
 
 3. Component content
-   In the Sample.jsx
 
 ```
+Write this code example in Sample.jsx, or your own code.
+
 import React from 'react';
 
 const Sample = () => {
