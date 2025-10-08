@@ -1,8 +1,7 @@
 .woodenBg {
   padding: 1rem;
 
-background-image:
-  repeating-linear-gradient(
+  background-image: repeating-linear-gradient(
       -45deg,
       rgba(0, 0, 0, 0.1) 0px,
       rgba(0, 0, 0, 0.02) 1px,
