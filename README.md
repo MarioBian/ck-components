@@ -32,54 +32,41 @@ Simple guide of how to use this repo.
 
 1. Install dependencies
 
- npm install
+npm install
 
-2. Start the development server:
+2. npm run storybook
 
- npm run dev
+3. A new window will popup with all of the components.
 
-3. Open your browser and navigate to http://localhost:3000 (or the port specified in the console)
+## Creating your own component
 
-### Playing Gomoku
+1. Create a new folder in the components folder and give it a name, example "Sample".
 
-* Choose your player, 1 or 2. Then choose your color and click on "Start Game"
+2. Scaffold Project
 
-* Players alternate turns
+touch ./src/components/Sample/index.js
+touch ./src/components/Sample/Sample.jsx
+touch ./src/components/Sample/Sample.module.css
+touch ./src/components/Sample/Sample.styles.js
+touch ./src/components/Sample/Sample.stories.jsx
 
-* The objective is to be the first to form an unbroken chain of five dots horizontally, vertically or diagonally
+3. Component content
+   In the Sample.jsx
 
-* The game will automatically detect wins and display the winner
+```
+import React from 'react';
 
-### Game Rules
+const Sample = () => {
+    return(
+        <>Sample</>
+    );
+}
 
-#### Basic Rules
-
-* Two players take turns placing dots on the intersections of the grid
-
-* The first player to align exactly 5 dots in a row (horizontally, vertically or diagonally) wins
-
-* If the board fills up without a winner, the game is a draw
-
-### Victory conditions
-
-* Horizontal: Five dots in a row across
-
-Vertical: Five dots in a row up and down
-
-Diagonal: Five stones in a row diagonally
-
-### Features
-
-* Interactive game board with click-to-play functionality
-
-* Win detection for all victory conditions
-
-* Turn indicator showing current player
-
-* Game reset functionality
+export default Sample;
+```
 
 ## Acknoledgments
 
-* Thanks to all contributors
+- Thanks to all contributors
 
-* Inspired by the classic Gomoku game
+- Inspired by the classic Gomoku game
