@@ -56,7 +56,9 @@ touch ./src/components/Sample/Sample.stories.jsx
 3. Component content
 
 ```
-Write this code example in Sample.jsx, or your own code.
+Write this code example, or your own code.
+
+> ./src/components/Sample/Sample.jsx
 
 import React from 'react';
 
@@ -82,6 +84,31 @@ export default {
 
 export const Default = {}
 
+```
+
+```
+This is our barrel file
+> ./src/components/Sample/index.js
+
+export {default as Sample} from './Sample';
+
+```
+
+```
+Add help bundler find file from components and src
+
+> ./src/components/index.js <<
+export {Sample} from './components/Sample';
+
+> ./src/index.js <<
+export {Sample} from './components';
+
+```
+
+## Try it out
+
+```
+npm run storybook
 ```
 
 ## Acknoledgments
