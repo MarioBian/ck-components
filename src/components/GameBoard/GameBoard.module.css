@@ -26,7 +26,7 @@
   border: 1.8px solid #654c31;
   display: table-cell;
   position: relative;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0s ease-in-out;
   box-sizing: border-box;
   cursor: pointer;
 }
