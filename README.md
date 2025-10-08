@@ -44,11 +44,13 @@ npm install
 
 2. Scaffold Project
 
+```
 touch ./src/components/Sample/index.js
 touch ./src/components/Sample/Sample.jsx
 touch ./src/components/Sample/Sample.module.css
 touch ./src/components/Sample/Sample.styles.js
 touch ./src/components/Sample/Sample.stories.jsx
+```
 
 3. Component content
    In the Sample.jsx
