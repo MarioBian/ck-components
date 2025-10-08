@@ -115,20 +115,30 @@
 
 .startButton {
   display: block;
-  margin: 20px auto 0;
-  padding: 15px 30px;
+  margin: 0px auto 0;
+  padding: 5px 30px;
   font-size: 16px;
+  font-weight: 800;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   background-color: #28a745;
   color: white;
   transition: all 0.2s;
+  animation: startBtnEffect 3s linear infinite;
+  cursor: pointer;
 }
 
 .startButton:hover {
   background-color: #218838;
   transform: scale(1.05);
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes startBtnEffect {
+  0%, 100% {opacity: 70%;}
+  50% {opacity: 100%;}
 }
 
 /* Piece styles */
